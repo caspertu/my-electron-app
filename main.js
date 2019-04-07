@@ -20,7 +20,7 @@ function createWindow () {
     // 通常会把多个 window 对象存放在一个数组里面，
     // 与此同时，你应该删除相应的元素。
     win = null
-    console.log('win closed, win = null')
+    console.log('win.on closed, win = null')
   })
 }
 
@@ -35,7 +35,7 @@ app.on('window-all-closed', () => {
   // 否则绝大部分应用及其菜单栏会保持激活。
   if (process.platform !== 'darwin') {
     app.quit()
-    console.log('window-all-closed, app.quit()')
+    console.log('app.on window-all-closed, app.quit()')
   }
 })
 
